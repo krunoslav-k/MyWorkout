@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="hr.ferit.krunoslavkazalicki.myworkout.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="hr.ferit.krunoslavkazalicki.myworkout.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="hr.ferit.krunoslavkazalicki.myworkout.ExercisesFragment"
+        android:label="fragment_exercises"
+        tools:layout="@layout/fragment_exercises" />
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="hr.ferit.krunoslavkazalicki.myworkout.InformationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="hr.ferit.krunoslavkazalicki.myworkout.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

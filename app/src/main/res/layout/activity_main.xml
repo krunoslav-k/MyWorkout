@@ -6,90 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/logWorkout_title_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/M_indentation"
-        android:layout_marginTop="@dimen/big_distance"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/logWorkout_title"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/logWorkout_subtitle_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/M_indentation"
-        android:layout_marginTop="@dimen/L_distance"
-        android:text="@string/logWorkout_subtitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logWorkout_title_tv" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/logWorkoutButton_size"
+            android:layout_height="@dimen/logWorkoutButton_size"
+            android:layout_marginStart="@dimen/M_indentation"
+            android:layout_marginTop="@dimen/M_distance"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/repetitiveStrengthWorkout"
+            android:textColor="@color/gray_blue"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logWorkout_subtitle_tv"
+            app:strokeColor="@color/primary_blue"
+            app:strokeWidth="0.8dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="@dimen/logWorkoutButton_size"
-        android:layout_height="@dimen/logWorkoutButton_size"
-        android:layout_marginStart="@dimen/M_indentation"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/repetitiveStrengthWorkout"
-        android:textColor="@color/gray_blue"
-        android:textSize="12sp"
-        app:cornerRadius="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logWorkout_subtitle_tv"
-        app:strokeColor="@color/primary_blue"
-        app:strokeWidth="0.8dp" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/logWorkoutButton_size"
+            android:layout_height="@dimen/logWorkoutButton_size"
+            android:layout_marginStart="@dimen/M_indentation"
+            android:layout_marginTop="@dimen/M_indentation"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/cardio"
+            android:textColor="@color/gray_blue"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:strokeColor="@color/primary_blue"
+            app:strokeWidth="0.8dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="@dimen/logWorkoutButton_size"
-        android:layout_height="@dimen/logWorkoutButton_size"
-        android:layout_marginStart="@dimen/M_indentation"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/cardio"
-        android:textColor="@color/gray_blue"
-        android:textSize="12sp"
-        app:cornerRadius="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:strokeColor="@color/primary_blue"
-        app:strokeWidth="0.8dp" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="@dimen/logWorkoutButton_size"
+            android:layout_height="@dimen/logWorkoutButton_size"
+            android:layout_marginTop="@dimen/M_indentation"
+            android:layout_marginEnd="@dimen/M_indentation"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/stretching"
+            android:textColor="@color/gray_blue"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:strokeColor="@color/primary_blue"
+            app:strokeWidth="0.8dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="@dimen/logWorkoutButton_size"
-        android:layout_height="@dimen/logWorkoutButton_size"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="@dimen/M_indentation"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/stretching"
-        android:textColor="@color/gray_blue"
-        android:textSize="12sp"
-        app:cornerRadius="8dp"
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/logWorkoutButton_size"
+            android:layout_height="@dimen/logWorkoutButton_size"
+            android:layout_marginTop="@dimen/M_distance"
+            android:layout_marginEnd="@dimen/M_indentation"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/timedStrengthWorkout"
+            android:textColor="@color/gray_blue"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logWorkout_subtitle_tv"
+            app:strokeColor="@color/primary_blue"
+            app:strokeWidth="0.8dp" />
+
+        <TextView
+            android:id="@+id/logWorkout_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/M_indentation"
+            android:layout_marginTop="@dimen/big_distance"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/logWorkout_title"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/logWorkout_subtitle_tv"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/M_indentation"
+            android:layout_marginTop="32dp"
+            android:text="@string/logWorkout_subtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logWorkout_title_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray_blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:strokeColor="@color/primary_blue"
-        app:strokeWidth="0.8dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="@dimen/logWorkoutButton_size"
-        android:layout_height="@dimen/logWorkoutButton_size"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="@dimen/M_indentation"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/timedStrengthWorkout"
-        android:textColor="@color/gray_blue"
-        android:textSize="12sp"
-        app:cornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logWorkout_subtitle_tv"
-        app:strokeColor="@color/primary_blue"
-        app:strokeWidth="0.8dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="labeled"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
